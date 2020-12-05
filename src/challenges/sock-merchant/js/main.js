@@ -1,20 +1,19 @@
-const merchantUniques = {};
-let totalMerchantPairs = 0;
-
 function sockMerchant(n, ar) {
-  for (var i = 0; i < n; i++) {
-    if (merchantUniques.hasOwnProperty(ar[i])) {
-      totalMerchantPairs++;
-      delete merchantUniques[ar[i]];
+  const merchantUniques = {};
+
+  return ar.reduce((totalMerchantPairs, i) => {
+    if (merchantUniques[i]) {
+      delete merchantUniques[i];
+      return totalMerchantPairs + 1;
     } else {
-      merchantUniques[ar[i]] = 0;
+      merchantUniques[i] = true;
+      return totalMerchantPairs;
     }
-  }
-  return totalMerchantPairs;
+  }, 0);
 }
 
 (main = () => {
   const n = 9;
   const ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
-  const result = sockMerchant(n, ar);
+  sockMerchant(n, ar);
 })();
