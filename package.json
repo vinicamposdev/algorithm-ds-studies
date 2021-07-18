@@ -1,0 +1,25 @@
+{
+  "name": "algorithm-ds-studies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmo-campos/algorithm-ds-studies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmo-campos/algorithm-ds-studies/issues"
+  },
+  "homepage": "https://github.com/vmo-campos/algorithm-ds-studies#readme"
+}
