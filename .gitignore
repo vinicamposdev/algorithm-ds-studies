@@ -1,1 +1,7 @@
 node_modules
+
+# cpp compiled runners
+main
+
+# vscode
+.vscode
